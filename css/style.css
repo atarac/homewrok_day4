@@ -209,6 +209,7 @@ mainvisual
   position: relative;
 }
 
+/* position:absolute効かない、slickにposition:relative入っているから? */
 .carousel {
   width: 75%;
   margin-left: auto;
@@ -228,6 +229,7 @@ mainvisual
 #mainvisual .content h1 {
   font-size: 46px;
   margin-bottom: 30px;
+  text-shadow: 3px 4px 4px #FFF;
 }
 
 #mainvisual .trial-btn a {
