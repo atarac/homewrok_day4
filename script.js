@@ -13,8 +13,7 @@ $(function () {
   // メイン画像のカルーセル
   $('.carousel').slick({
     fade: true,
-    autospeed: true,
-    speed: 2000,
+    autoplay: true,
     dots: false,
     infinite: true,
     autoplaySpeed: 5000,
