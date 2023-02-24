@@ -209,7 +209,7 @@ mainvisual
   position: relative;
 }
 
-/* position:absolute効かない、slickにposition:relative入っているから? */
+/* position:absolute効かない、slickにposition:relative入っているからか? */
 .carousel {
   width: 75%;
   margin-left: auto;
