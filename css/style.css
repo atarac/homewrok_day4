@@ -398,7 +398,7 @@ summary
 /* 概要の背景アニメーション */
 @keyframes move-img {
   0% { background-position-x: 0; }
-  100% { background-position-x: 100%; }
+  100% { background-position-x: 221.2%; }
 }
 
 #summary {
