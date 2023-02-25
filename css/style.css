@@ -213,9 +213,9 @@ mainvisual
 .carousel {
   width: 75%;
   margin-left: auto;
+  position: relative;
 }
 
-/* ソースコードより引用、実装されない */
 .carousel li::after {
   content: "";
   position: absolute;
