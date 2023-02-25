@@ -215,6 +215,17 @@ mainvisual
   margin-left: auto;
 }
 
+/* ソースコードより引用、実装されない */
+.carousel li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0px 0px 20px 20px #FFF;
+}
+
 .carousel img {
   height: 720px;
   object-fit: cover;
@@ -275,10 +286,12 @@ reason
 .reason1, .reason2 {
   background-color: #FFF;
   width: 50%;
-  height: 200px;
+  /* height: 200px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  /* add */
+  padding: 5%;
 }
 
 .reason1 {
@@ -397,13 +410,16 @@ summary
 -------------------- */
 /* 概要の背景アニメーション */
 @keyframes move-img {
-  0% { background-position-x: 0; }
-  100% { background-position-x: 221.2%; }
+  /* 0% { background-position-x: 0; }
+  100% { background-position-x: 204%; } */
+  0% { background-position: 0 0; }
+  100% { background-position: -700px 700px; }
+
 }
 
 #summary {
   background-image: url(../img/bg.gif);
-  animation: move-img 8s linear infinite running;
+  animation: move-img 10s linear infinite running;
   background-repeat: repeat;
   padding-bottom: 60px;
 }
@@ -660,25 +676,26 @@ SP用設定
 
   .reason1, .reason2 {
     background-color: #FFF;
-    width: 97%;
-    height: 120px;
+    /* width: 97%; */
+    width: calc(100% - 16px);
+    /* height: 120px; */
     display: flex;
     justify-content: center;
-    padding: 70px 0;
+    /* padding: 70px 0; */
   }
 
   .reason1 {
     border-radius: 0 20px 20px 0;
     position: static;
-    height: 83px;
-    padding: 18px 20px;
+    /* height: 83px; */
+    /* padding: 18px 20px; */
   }
 
   .reason2 {
     border-radius: 20px 0 0 20px;
     position: static;
-    height: 83px;
-    padding: 18px 20px;
+    /* height: 83px; */
+    /* padding: 18px 20px; */
   }
 
   #reason img {
